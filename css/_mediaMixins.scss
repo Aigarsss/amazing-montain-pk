@@ -1,0 +1,7 @@
+@mixin breakpoint($screen) {
+  @if $screen == phone {
+    @media screen and (max-width: 200px) {
+      @content;
+    }
+  }
+}
